@@ -141,6 +141,8 @@
     <ClCompile Include="Constants.cpp" />
     <ClCompile Include="GameLogic.cpp" />
     <ClCompile Include="GameMain.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Paddle.cpp" />
     <ClCompile Include="Sound.cpp" />
   </ItemGroup>
@@ -151,6 +153,8 @@
     <ClInclude Include="Block.hpp" />
     <ClInclude Include="Constants.hpp" />
     <ClInclude Include="GameLogic.hpp" />
+    <ClInclude Include="GameObject.hpp" />
+    <ClInclude Include="Menu.hpp" />
     <ClInclude Include="Paddle.hpp" />
     <ClInclude Include="Sound.hpp" />
   </ItemGroup>

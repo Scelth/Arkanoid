@@ -10,7 +10,7 @@ private:
 
 public:
     Application();
-    ~Application();
+    virtual ~Application();
 
     void Close();
     void Start();

@@ -1,18 +1,17 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <list>
+#include "GameObject.hpp"
 
-class Block
+class Block : public GameObject
 {
 private:
-	sf::Texture blockTexture;
-	std::vector<sf::Texture> blockTextures;
 	std::list<sf::Sprite> blockSprites;
 
 public:
 	Block();
 
-	void DrawBlock(sf::RenderWindow& window);
+	void Draw(sf::RenderWindow& window) override;
 	void SetBlocks();
 
 	std::list<sf::Sprite>& GetBlockSprites();

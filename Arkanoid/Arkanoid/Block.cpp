@@ -3,11 +3,10 @@
 
 Block::Block()
 {
-	blockTexture.loadFromFile("Resources/Assets/Block.png");
-    blockTextures.push_back(blockTexture);
+	objectTexture.loadFromFile("Resources/Assets/Block.png");
 }
 
-void Block::DrawBlock(sf::RenderWindow& window)
+void Block::Draw(sf::RenderWindow& window)
 {
     for (auto& block : blockSprites)
     {
@@ -24,8 +23,8 @@ void Block::SetBlocks()
         for (int j = 1; j <= Constants::BLOCKS_COUNT.y; j++)
         {
             sf::Sprite block;
-            block.setTexture(blockTexture);
-            block.setPosition(i * (blockTexture.getSize().x + 4), 10 + j * (blockTexture.getSize().y + 4));
+            block.setTexture(objectTexture);
+            block.setPosition(i * (objectTexture.getSize().x + 4), 10 + j * (objectTexture.getSize().y + 4));
             blocks.push_back(block);
         }
     }

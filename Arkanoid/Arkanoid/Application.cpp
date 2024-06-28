@@ -31,12 +31,8 @@ void Application::Start()
 {
     GameLogic game(this);
 
-    while (IsOpen())
-    {
-        game.StartGame();
-    }
+    game.CallMainMenu();
 }
-
 
 sf::RenderWindow& Application::GetRenderWindow()
 {

@@ -6,11 +6,13 @@
 #include "Paddle.hpp"
 #include "Block.hpp"
 #include "Sound.hpp"
+#include "Menu.hpp"
 
 class GameLogic
 {
 private:
     Application* application;
+    Menu menu;
     Ball ball;
     Backgroud background;
     Paddle paddle;
@@ -20,13 +22,17 @@ private:
     int score = 0;
 
     bool continueGame = false;
+    bool gamePause = false;
+    bool mainMenuCall = true;
 
 public:
     GameLogic(Application* app);
     ~GameLogic();
 
+    void CallMainMenu();
     void DrawGame();
     void StartGame();
+    void UpdateGame();
     void RestartGame();
     void HandleWindowEvents();
 };

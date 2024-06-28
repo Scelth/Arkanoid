@@ -1,13 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "GameObject.hpp"
 
-class Backgroud
+class Backgroud : public GameObject
 {
-private:
-	sf::Texture backgroundTexture;
-	sf::Sprite backgroundSprite;
-
 public:
 	Backgroud();
-	void DrawBackground(sf::RenderWindow& window);
 };
